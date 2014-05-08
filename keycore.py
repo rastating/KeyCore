@@ -89,7 +89,7 @@ if __name__ == "__main__":
 
     screen.addstr(active_key_offset_y, (sizex / 2) - 15, "Press a key to begin testing!")
 
-    while key != ord('q'):
+    while True:
         key = screen.getch()
         screen.move(active_key_offset_y, 0)
         screen.clrtoeol()
