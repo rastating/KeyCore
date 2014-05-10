@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>KeyCore - A USB Bootable Keyboard Tester</title>
+
+		<link href="assets/fonts/varela.css" rel="stylesheet" type="text/css">
+		<link href="assets/css/main.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div id="container">
+			<div id="banner">
+				<img id="logo" src="assets/images/logo.png">
+				<div class="clearfix"></div>
+
+				<h1>KeyCore</h1>
+				<h2>A USB bootable keyboard tester</h2>
+
+				<a href="https://github.com/rastating/KeyCore/releases/download/v1.0/KeyCore.iso" class="button blue center">Download KeyCore (v1.0)</a>
+				<a href="https://github.com/rastating/KeyCore" class="button red center">View on GitHub</a>
+			</div>
+
+			<div id="content">
+				<h2>What is it?</h2>
+				<p>
+					KeyCore is a lightweight system (weighing in at just 64 megabytes!) built with <a href="http://distro.ibiblio.org/tinycorelinux/">Tiny Core Linux</a> and <a href="https://www.python.org/">Python</a> for the purpose of testing keyboards. 
+				</p>
+				<p>
+					It was originally designed for <a href="http://handygeek.co.uk/">HandyGeek</a> to test laptop keyboards being stripped for spare parts; a lot of which didn't have storage devices with an operating system.
+				</p>
+
+				<h2>Installing and booting from a USB pen drive</h2>
+				<p>
+					Start by downloading the latest version of the KeyCore ISO using the download link at the top of this page.
+				</p>
+				<p>
+					Once you have downloaded the ISO, you will need to find a USB pen drive with at least 64 megabytes of space and software capable of creating bootable USB drives. If you are using Windows, I highly recommend using <a href="http://rufus.akeo.ie/">Rufus</a>.
+				</p>
+				<p>
+					If using Rufus to create your bootable USB drive, simply choose the USB drive from the device dropdown list, select the ISO file you downloaded and then hit the start button; it's that simple!
+				</p>
+				<p>
+					Once you have finished setting up your USB drive, simply plug it into a computer that supports USB booting, power up and within roughly 10-15 seconds you'll be in the KeyCore environment, which will display the key code of the key you last pressed.
+				</p>
+
+				<h2>Limitations</h2>
+				<p>
+					Currently, KeyCore is unable to detect modifier keys (CTRL, ALT, shift, caps lock etc.) being pressed individually. In order to test these keys, you must use them in conjunction with a key they will modify. For example, pressing ALT + A will give you a different key number than pressing A on its own, likewise pressing the A key whilst having caps lock enabled will send a different signal than if caps lock was disabled.
+				</p>
+
+				<h2>Contributing and reporting issues</h2>
+				<p>
+					If you find any problems with KeyCore or want to contribute to the project, head over to the <a href="https://github.com/rastating/KeyCore">GitHub</a> page. Alternatively you can contact me directly on <a href="https://plus.google.com/101711965674283402975/posts">Google+</a> or <a href="https://twitter.com/iamrastating">Twitter</a>.
+				</p>
+			</div>
+
+			<div id="footer">
+				<hr />
+				Copyright 2014 <a href="http://rastating.com/">rastating</a> - Released under the <a href="http://www.gnu.org/licenses/gpl-faq.html">GNU General Public License</a>
+			</div>
+		</div>
+	</body>
+</html>
